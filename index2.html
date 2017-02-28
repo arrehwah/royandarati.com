@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>roy + arati design</title>
+<link rel="stylesheet" href="styles/styles.css" />
+<SCRIPT src="js/jquery.js" type=text/javascript></SCRIPT>
+
+<SCRIPT src="js/cookie.js" type=text/javascript></SCRIPT>
+
+<SCRIPT src="js/jquery.cycle.all.js" type=text/javascript></SCRIPT>
+
+<SCRIPT src="js/script.js" type=text/javascript></SCRIPT>
+<script>
+function changeSrc(theSrc,navEle){
+document.getElementById('theFrame').src=theSrc
+theName=navEle.name;
+leftAchor=document.getElementById('leftNavUl').getElementsByTagName('a');
+
+	for(i=0;i<leftAchor.length;i++)
+	{
+		if(theName=='recent')
+		{
+			leftAchor[i].className='left_nav';
+			navEle.className='left_nav_on';
+			document.getElementById('aidi').className='on';
+		}
+		if(theName=='recent1')
+		{
+			if(leftAchor[i].name=='recent1'){
+				leftAchor[i].className='';
+				navEle.className='on';
+			}
+			
+		}
+		if(theName=='archive')
+		{
+			leftAchor[i].className='left_nav';
+			navEle.className='left_nav_on';
+			document.getElementById('aaryan').className='on';
+		}
+		if(theName=='archive1')
+		{
+			if(leftAchor[i].name=='archive1'){
+				leftAchor[i].className='';
+				navEle.className='on';
+			}
+			
+		}
+		if(theName=='about')
+		{
+			leftAchor[i].className='left_nav';
+			navEle.className='left_nav_on';
+		}
+		if(theName=='contact')
+		{
+			leftAchor[i].className='left_nav';
+			navEle.className='left_nav_on';
+		}
+
+	}
+
+}
+function showNav(theId){
+	if(document.getElementById(theId).style.display=='none')
+	{$('#'+theId).slideDown('slow');}
+}
+function hideNav(theId){
+if(document.getElementById(theId).style.display!='none')
+{$('#'+theId).slideUp('slow');}
+}
+</script>
+
+<style>
+.footer{
+height:50px; text-align:left; padding-top:5px; padding-left:224px;
+}
+
+</style>
+
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="225" class="top_left">
+        <div class="logo"> <a href="index.html" title="Home"><img src="img/logo.gif" alt="Home"/></a></div>
+		<div style="clear:both; padding-left:10px;padding-top:35px;">
+	 <ul class="left_nav" id="leftNavUl">
+    	<li><a href="javascript:void(0)" name="recent" onclick="showNav('leftnav1'); hideNav('leftnav2');changeSrc('rw_aidi.html',this)" class="left_nav"><u>r</u>ecent work</a>
+        <div id="leftnav1" style="display:none">
+	       	<ul class="left_nav_level1" >
+                <li><a href="javascript:void(0)" name="recent1" id="aidi" onclick="changeSrc('rw_aidi.html',this)"><u>a</u>idi workshop branding</a></li>
+                <li><a href="javascript:void(0)" name="recent1" onclick="changeSrc('rw_samasta.html',this)"><u>s</u>amasta microfinance identity</a></li>
+                <li><a href="javascript:void(0)" name="recent1" onclick="changeSrc('rw_black.html',this)"><u>b</u>lack coffee productions</a></li>
+                <li><a href="javascript:void(0)" name="recent1" onclick="changeSrc('rw_kashi.html',this)"><u>k</u>ashi gallery catalogue</a></li>
+                <li><a href="javascript:void(0)" name="recent1" onclick="changeSrc('rw_kabir.html',this)"><u>t</u>he kabir project book & website</a></li>
+                <li><a href="javascript:void(0)" name="recent1" onclick="changeSrc('rw_dump.html',this)"><u>d</u>aily dump communication</a></li>
+                <li><a href="javascript:void(0)" name="recent1" onclick="changeSrc('rw_action.html',this)"><u>a</u>ction research info-graphics</a></li>
+                <li><a href="javascript:void(0)" name="recent1" onclick="changeSrc('rw_unisun.html',this)"><u>u</u>nisun christmas card</a></li>
+                <li><a href="javascript:void(0)" name="recent1" onclick="changeSrc('rw_sujatha.html',this)"><u>s</u>ujatha’s wedding card</a></li>
+                <li><a href="javascript:void(0)" name="recent1" onclick="changeSrc('rw_illustrated.html',this)"><u>i</u>llustrated invitations</a></li>
+                <li><a href="javascript:void(0)" name="recent1" onclick="changeSrc('rw_illustrations.html',this)"><u>i</u>llustrations</a></li>
+                <li><a href="javascript:void(0)" name="recent1" onclick="changeSrc('rw_roys_painted.html',this)"><u>r</u>oy’s painted t-shirts</a></li>
+            </ul>
+         </div>
+        </li> 
+        <li><a href="javascript:void(0)" name="archive" class="left_nav" onclick="showNav('leftnav2'); hideNav('leftnav1');changeSrc('ar_aaryan.html',this)"><u>a</u>rchives</a>
+        <div id="leftnav2" style="display:none" >
+         <ul class="left_nav_level1" >
+                <li><a href="javascript:void(0)" name="archive1" id="aaryan" onclick="changeSrc('ar_aaryan.html',this)" ><u>a</u>aryan re-branding</a></li> 
+                <li><a href="javascript:void(0)" name="archive1" onclick="changeSrc('ar_ecotone.html',this)"  ><u>e</u>cotone identity</a></li>
+                <li><a href="javascript:void(0)" name="archive1" onclick="changeSrc('ar_pod.html',this)"><u>p</u>od identity</a></li>
+                <li><a href="javascript:void(0)" name="archive1" onclick="changeSrc('ar_black.html',this)" ><u>b</u>lack coffee posters</a></li>
+                <li><a href="javascript:void(0)" name="archive1" onclick="changeSrc('ar_passing.html',this)" ><u>p</u>assing by catalogue</a></li> 
+                <li><a href="javascript:void(0)" name="archive1" onclick="changeSrc('ar_well.html',this)"><u>w</u>ell basically collateral</a></li>
+                <li><a href="javascript:void(0)" name="archive1" onclick="changeSrc('ar_walk.html',this)"><u>w</u>alk book</a></li>
+                <li><a href="javascript:void(0)" name="archive1" onclick="changeSrc('ar_brandix.html',this)"><u>b</u>randix product review</a></li>
+                <li><a href="javascript:void(0)" name="archive1" onclick="changeSrc('ar_hayleys.html',this)"  ><u>h</u>ayleys annual report</a></li>
+                <li><a href="javascript:void(0)" name="archive1" onclick="changeSrc('ar_osc.html',this)"><u>o</u>sc annual report</a></li>
+                <li><a href="javascript:void(0)" name="archive1" onclick="changeSrc('ar_nihal.html',this)" ><u>n</u>ihal’s book cover</a></li>
+                <li><a href="javascript:void(0)" name="archive1" onclick="changeSrc('ar_rajeev.html',this)"><u>r</u>ajeev & aparna’s wedding card</a></li>
+                <li><a href="javascript:void(0)" name="archive1" onclick="changeSrc('ar_laserwords.html',this)"><u>l</u>aserwords new year package</a></li>
+        </ul>
+        </div>
+        
+        
+        </li>
+        <li><a href="javascript:void(0)" name="about" onclick="changeSrc('about_us.html',this);hideNav('leftnav1');hideNav('leftnav2');"  ><u>a</u>bout us</a></li> 
+        <li><a href="javascript:void(0)" name="contact"  onclick="changeSrc('contact_us.html',this);hideNav('leftnav1');hideNav('leftnav2');"><u>c</u>ontact us</a></li>
+    
+    </ul>
+	</div>
+    </td>
+    <td height="640">
+    <iframe scrolling="no" width="100%" height="640" frameborder="0" src="home_page.html" id="theFrame">
+    
+    
+    </iframe>
+    
+    
+    
+    </td>
+  </tr>
+</table>
+<div class="footer">
+	contact us at <a class="link" href="mailto:arrehwah@gmail.com">arrehwah@gmail.com</a> | site developed by <a class="link" href="mailto:premjit_n@yahoo.com">premjit</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+body{
+margin:0px;
+padding:0px 0 0 0;
+font-family:Arial, Helvetica, sans-serif;
+font-size:13px;
+background:#FFF;
+color:#636466;
+}
+.container{
+background:#fff;
+width:100%;
+}
+td{
+vertical-align:top;
+}
+img{
+border:0px;
+}
+.top_right{
+padding-top:10px;
+
+}
+.top_left{
+padding-top:20px;
+padding-bottom:35px;
+width:224px;
+}
+.left_td{
+padding-left:10px;
+}
+.left_nav{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.left_nav li{
+	margin:0 0 0px 0px;
+	padding:0px;
+	list-style:none;
+	line-height:20px;
+	font-size:14px;
+	padding-bottom:2px;
+}
+
+.left_nav a{
+text-decoration:none;
+color:#4d4d4d;	
+}	
+.left_nav a:hover{
+text-decoration:none;
+color:#000000;
+background:#E7FF4A;
+}	
+.content_area{
+padding-bottom:5px;
+}
+.left_nav  a.left_nav_on{
+color:#4d4d4d;
+background:#E7FF4A	;
+text-decoration:none;
+}
+.left_nav_level1{
+	margin:0px;
+	padding:0px 0 0 20px;
+	list-style:none;
+
+}
+.left_nav_level1 li{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	font-size:13px;
+}
+
+.left_nav_level1 a{
+text-decoration:none;
+color:#4d4d4d;	
+}
+.left_nav_level1 a:hover, .left_nav_level1 a.on{
+text-decoration:none;
+color:#000000;	
+background:#E7FF4A;
+}
+.image_container{
+height:660px;
+padding:0px 3px 3px 0px;
+position:relative;
+
+}
+.image_container img{
+position:relative;
+top:30px;
+}
+.photo_table{
+margin:10px 0 0 0;
+width:700px;
+}
+.photo_table td{
+text-align:left;
+padding:0px 0 5px 0px;
+vertical-align:top;
+width:80px;
+
+}
+.photo_table td img{
+position:static;
+}
+.photo_table .next{
+float:left;
+margin-top:30px;
+padding-left:0px;
+}
+.photo_table .next:hover{
+padding-left:0px;
+}
+.photo_table .description{
+
+text-align:left;
+padding-top:25px;
+width:600px;
+padding-right:30px;
+color:#636466;
+}
+.link{
+color:#636466;
+text-decoration:none;
+}
+.link:hover{
+color:#000000;
+}
+.logo{
+float:left;
+padding-left:10px;
+}
+
+.pagination{
+padding-top:10px;
+}
+.image_title{
+padding:0px 0 2px 0 ;
+font-weight:normal;
+	
+color:#636466;
+}
+.previous{
+color:#636466;
+text-decoration:none;
+padding:0 5px 0px  0px;
+cursor:pointer;
+}
+
+.next{
+color:#636466;
+text-decoration:none;
+padding:0 15px 0px  5px;
+cursor:pointer;
+}
+
+.previous:hover{
+color:#000000;
+text-decoration:none;
+padding:0 5px 0px  0px;
+cursor:pointer;
+}
+
+.next:hover{
+color:#000000;
+text-decoration:none;
+padding:0 15px 0px  5px;
+cursor:pointer;
+}
+
+.theImage{
+/*cursor:pointer;*/
+}
+.previous_off, .next_off{
+text-decoration:none;
+padding:0 3px;
+color:#CCCCCC;
+}
+
+.text_container{
+padding:0px 10px; 
+width:600px;
+}
+
+#main_cont{
+position:relative;
+height:660px;
+
+}
+.previous_image{
+position:absolute;
+top:230px;left:0px;
+z-index:100;
+display:none;
+}
+.next_image{
+position:absolute;
+top:230px;
+right:-14px;
+z-index:100;
+display:none;
+
+}
+
